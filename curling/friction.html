@@ -12,13 +12,13 @@
 
 window.onload = function(){
     
-    var justaname
+    var justaname 
    
     var nevermind=-1;
     
-    var steppp;
+    var steppp;  //how far it will jump each time
    
-    var friction = 2
+    var friction = 2   //of course hook this with sound
 
     clearInterval(justaname);
     justaname = setInterval(function(){
@@ -26,7 +26,7 @@ window.onload = function(){
         nevermind++;
        
         steppp =    0.02*(99.9-friction*nevermind);
-        console.log (steppp)
+        console.log (steppp)  
         
         if(steppp < 0){
         clearInterval(justaname);
